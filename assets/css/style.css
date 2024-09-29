@@ -1,0 +1,240 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 1rem;
+    text-align: center;
+    position: fixed; /* Fixes the header at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Keeps header on top */
+}
+
+.header ul {
+    list-style: none; /* Removes bullet points */
+}
+
+.header ul li {
+    display: inline; /* Puts list items in a row */
+    margin: 0 15px; /* Adds space between menu items */
+}
+
+.header ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.header ul li a:hover {
+    color: #f4a261; /* Changes color on hover */
+}
+
+/* GitHub Icon Styles */
+.github-icon {
+    font-size: 30px; /* Adjust the size as needed */
+    color: #fff; /* White color for icon */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+    margin-left: 20px; /* Space from the menu items */
+}
+
+.github-icon:hover {
+    color: #f4a261; /* Change color on hover */
+}
+
+/* Main Content Styles */
+.main {
+    padding: 5rem 2rem; /* Adds space at the top to prevent overlap with fixed header */
+    text-align: center; /* Centers text */
+}
+
+.section {
+    margin: 4rem 0; /* Adds margin to each section */
+}
+
+/* Home Section Styles */
+.home h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* About Section Styles */
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Skills Section Styles */
+.skills h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.skills ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+/* Contact Section Styles */
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.contact a {
+    color: #f4a261; /* Email link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Textarea Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: #eaeaea;
+}
+
+/* Disable textarea resizing and set standard width */
+.form-group textarea {
+    resize: none; /* Disable stretch/resize */
+    width: 100%;  /* Ensure textarea width fills its container */
+    max-width: 100%; /* Prevents resizing beyond the form width */
+    height: 150px; /* Standard height for the textarea */
+}
+
+/* Submit Button */
+.submit-btn {
+    text-align: center;
+}
+
+.submit-btn button {
+    background-color: #3498db; /* Light blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+    position: relative; /* Allows positioning of child elements */
+    text-align: center; /* Center align the image */
+    margin: 60px 0; /* Increased margin for more spacing below the header */
+}
+
+.profile-image {
+    width: 180px; /* Increased width of the image */
+    height: 180px; /* Increased height of the image */
+    border-radius: 50%; /* Make the image rounded */
+    border: 5px solid #fff; /* Optional: add a white border around the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    position: relative; /* Position relative for finer control if needed */
+    top: 120px; /* Lower the image further */
+}

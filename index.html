@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initialscale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!--=============== SWIPER CSS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
-  
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 
-    <title>Emmanuel Otieno Portofolio</title>    
-       
-    </head>
+    <title>Emmanuel Otieno Portfolio</title>
+</head>
 
-    <body>
+<body>
 
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="https://github.com/EmmanuelOtienoo" class="github-icon" target="_blank" aria-label="Visit Emmanuel Otienoo's GitHub profile">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        </header>
+    <!--=============== PROFILE IMAGE ===============-->
+    <div class="profile-image-container">
+        <img src="assets/img/Profile.jpg" alt="Profile Image" class="profile-image">
+    </div>
 
     <main class="main">
+        <!--=============== HOME SECTION ===============-->
         <section class="home section" id="home">
-
+            <h1>Hi I'm Emmanuel Otieno</h1>
+            <p>I'm an aspiring software engineer and dedicated web developer. I specialize in creating custom websites and web applications, with a strong focus on building stable and scalable solutions. I enjoy sharing my knowledge and experiences to help others grow in the tech industry. If you're looking for someone passionate about web development and committed to delivering reliable solutions, I'm here to help. Let's connect and discuss how I can assist with your next project!</p>
         </section>
 
+        <!--=============== ABOUT SECTION ===============-->
         <section class="about section" id="about">
-
+            <h2>About Me</h2>
+            <p>I'm an aspiring software engineer and dedicated web developer with a passion for building custom websites and web applications. While I'm still growing in my career, I focus heavily on creating stable, scalable solutions that can truly make a difference. I enjoy using technology to solve practical problems and sharing my knowledge to help others in the tech industry.</p>
+            <p>I pride myself on being detail-oriented, reliable, and committed to delivering high-quality results. I'm always looking to collaborate with clients who value long-term, stable solutions. If you're seeking a web developer who's passionate, driven, and eager to help your project succeed.</p>
         </section>
 
+        <!--=============== SKILLS SECTION ===============-->
         <section class="skills section" id="skills">
-
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
         </section>
 
+        <!--=============== CONTACT SECTION ===============-->
         <section class="contact section" id="contact">
-
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-group submit-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </section>
-
+        
     </main>
 
     <footer class="footer">
-
+        <p>© 2024 Emmanuel Otieno</p>
     </footer>
-
-    <script src="assets/js/main.js"></script>
 
     <!--=============== SCROLL UP ===============-->
 
     <!--=============== SCROLL REVEAL ===============-->
 
-    </body>     
+</body>
 </html>
